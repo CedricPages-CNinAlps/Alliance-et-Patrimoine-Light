@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="fr" data-root="./">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Connexion — Alliance &amp; Patrimoine</title>
+<link rel="icon" href="./assets/img/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="./assets/css/site.css">
+<script src="./assets/js/app.js"></script>
+</head>
+<body>
+<div class="demo-bar" role="note">Site de démonstration — contenus d'exemple, aucun formulaire n'est réellement envoyé.</div>
+<main class="member-body" style="min-height:calc(100vh - 37px);display:flex;align-items:center">
+<div class="wrap" style="max-width:520px;width:100%">
+<div style="margin-bottom:24px"><a class="brand" href="./index.html"><svg width="40" height="40" viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="12" fill="#0F1B2D"/><path d="M11 28l9-16 9 16M15 22h10" stroke="#F5B342" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg><span><b>Alliance &amp; Patrimoine</b><small>Conseillers en gestion de patrimoine</small></span></a></div>
+<form class="card stack" id="login-form" style="padding:32px;gap:18px" novalidate>
+<h1 style="font-size:30px">Connexion</h1>
+<p class="muted">Un seul identifiant donne accès à l'espace adhérent et au back-office de démonstration.</p>
+<p class="form-error" id="login-error" hidden role="alert">Identifiant ou mot de passe incorrect.</p>
+<label class="field">Identifiant<input name="identifiant" autocomplete="username" required autocapitalize="none" spellcheck="false"></label>
+<label class="field">Mot de passe<input type="password" name="motdepasse" autocomplete="current-password" required></label>
+<fieldset class="stack" style="border:0;padding:0;margin:0;gap:8px"><legend class="field" style="margin-bottom:8px">Accéder à</legend>
+<label class="consent" style="font-size:15px"><input type="radio" name="cible" value="adherent" checked> Mon espace adhérent</label>
+<label class="consent" style="font-size:15px"><input type="radio" name="cible" value="admin"> Le back-office</label></fieldset>
+<button class="btn" type="submit">Se connecter</button>
+<p class="muted" style="font-size:13px">Sur le site définitif, la connexion se fera par un lien envoyé par e-mail, sans mot de passe, avec une double authentification pour le bureau.</p>
+</form>
+<p style="margin-top:20px"><a href="index.html">← Retour au site</a></p>
+</div></main></body></html>
