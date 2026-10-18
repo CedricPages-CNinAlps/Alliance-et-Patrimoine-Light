@@ -35,4 +35,4 @@ Ouvrir `index.html` dans un navigateur suffit pour le site public. Pour la conne
 | Espace adhérent | accueil, ma fiche, paiements, documents |
 | Back-office | tableau de bord, adhérents et cotisations, publications, réglages |
 
-Les textes entre crochets sont à remplacer par le contenu réel. Police : Plus Jakarta Sans, auto-hébergée (licence SIL OFL, `assets/fonts/LICENSE-OFL.txt`).
+Les conseillers et cabinets présentés sont fictifs ; les textes entre crochets sont à remplacer par le contenu réel. Police : Plus Jakarta Sans, auto-hébergée (licence SIL OFL, `assets/fonts/LICENSE-OFL.txt`).
