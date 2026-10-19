@@ -107,6 +107,24 @@
       });
     });
 
+    // Profils et permissions : choix du profil affiché
+    document.querySelectorAll("[data-profile-pick]").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        var id = btn.getAttribute("data-profile-pick");
+        document.querySelectorAll("[data-profile-pick]").forEach(function (b) { b.setAttribute("aria-pressed", b === btn ? "true" : "false"); });
+        document.querySelectorAll("[data-profile-panel]").forEach(function (p) { p.hidden = p.getAttribute("data-profile-panel") !== id; });
+      });
+    });
+    // Créer, modifier, publier ou supprimer implique de pouvoir consulter ; retirer « Consulter » retire tout
+    document.querySelectorAll(".perm-box").forEach(function (box) {
+      box.addEventListener("change", function () {
+        var row = box.closest("tr"), view = row.querySelector('[data-action="C"]');
+        if (box.getAttribute("data-action") === "C" && !box.checked) {
+          row.querySelectorAll(".perm-box").forEach(function (b) { b.checked = false; });
+        } else if (box.checked && view) { view.checked = true; }
+      });
+    });
+
     // Formulaires de démonstration
     document.querySelectorAll("form[data-demo]").forEach(function (form) {
       form.addEventListener("submit", function (e) {

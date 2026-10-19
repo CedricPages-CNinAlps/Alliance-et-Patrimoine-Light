@@ -33,6 +33,6 @@ Ouvrir `index.html` dans un navigateur suffit pour le site public. Pour la conne
 |---|---|
 | Site public | accueil, annuaire filtrable et 8 fiches conseiller, 8 domaines, agenda et 4 événements, l'association (adhésion, contact), mentions légales, plan du site, 404 |
 | Espace adhérent | accueil, ma fiche, paiements, documents |
-| Back-office | tableau de bord, adhérents et cotisations, publications, réglages |
+| Back-office | tableau de bord, adhérents et cotisations, publications, réglages, utilisateurs, profils et permissions (matrice des droits par partie du site) |
 
 Les conseillers et cabinets présentés sont fictifs ; les textes entre crochets sont à remplacer par le contenu réel. Police : Plus Jakarta Sans, auto-hébergée (licence SIL OFL, `assets/fonts/LICENSE-OFL.txt`).

@@ -34,6 +34,7 @@ a:hover { color: var(--ink); }
 :focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; border-radius: 6px; }
 h1, h2, h3 { margin: 0; letter-spacing: -0.02em; line-height: 1.1; font-weight: 800; }
 p { margin: 0; }
+[hidden] { display: none !important; }
 .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 .wrap { max-width: var(--wrap); margin: 0 auto; padding: 0 24px; }
 .stack { display: flex; flex-direction: column; gap: 16px; }
@@ -166,3 +167,22 @@ summary { padding: 18px 0; font-size: 17px; font-weight: 700; cursor: pointer; }
 @media (max-width: 640px) { .admin-main { padding: 20px 16px 48px; } }
 .tile { padding: 20px; border-radius: 18px; background: #fff; border: 1px solid var(--line); display: flex; flex-direction: column; gap: 6px; }
 .tile b { font-size: 32px; font-weight: 800; letter-spacing: -0.02em; }
+
+/* Profils et permissions */
+.profile-pick { text-align: left; display: flex; flex-direction: column; gap: 6px; padding: 14px 16px; border-radius: 16px; border: 1.5px solid var(--line); background: transparent; font: inherit; color: var(--ink); cursor: pointer; }
+.profile-pick[aria-pressed="true"] { background: #fff; border-color: var(--primary); }
+.profile-pick:hover { background: #fff; }
+.perm-table { min-width: 700px; }
+.perm-table caption { text-align: left; padding: 18px 16px 6px; font-size: 18px; font-weight: 800; }
+.perm-table th[scope="row"] { font-weight: 700; color: var(--ink); font-size: 14px; }
+.perm-table th small { display: block; font-weight: 500; font-size: 12px; color: var(--muted); }
+.perm-table .c { text-align: center; width: 92px; }
+.perm-table .na { color: #B5C0CE; }
+.perm-table tr.group th { background: var(--admin-bg); font-size: 11px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: #6B7A8F; padding: 12px 16px 6px; }
+.perm-box { width: 24px; height: 24px; accent-color: var(--primary); cursor: pointer; margin: 0; }
+.perm-box:disabled { cursor: not-allowed; }
+.switch { appearance: none; -webkit-appearance: none; flex: 0 0 auto; width: 48px; height: 28px; border-radius: 999px; background: #C3CDD9; position: relative; cursor: pointer; margin: 0; transition: background .15s; }
+.switch::after { content: ""; position: absolute; top: 3px; left: 3px; width: 22px; height: 22px; border-radius: 999px; background: #fff; box-shadow: 0 1px 2px rgba(15,27,45,.25); transition: left .15s; }
+.switch:checked { background: #1E7A4F; }
+.switch:checked::after { left: 23px; }
+.switch:disabled { opacity: .6; cursor: not-allowed; }
